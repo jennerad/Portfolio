@@ -1,0 +1,189 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Merriweather Sans', sans-serif;
+*/
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*******************************************/
+
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+#nav-wrapper {
+	position: fixed;
+	z-index: 99;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .1);
+	height: 40px;
+
+}
+
+nav {
+	/*margin: -5px 0px 0px 0px;*/
+	/*color: black;*/
+	text-align: center;
+	/*vertical-align: baseline;*/
+}
+nav ul {
+	/*display: block;*/
+}
+nav li{
+		display: inline;
+		padding-right: 20px;
+		position: relative;
+		/*top: 8px;*/
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body{
+    background-color: #363636;
+    font-size: 14px;
+		letter-spacing: .1em
+}
+
+.main {
+  background: url('../images/IV8A0901.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /*background-position: 50% 50%; */
+  margin-top: -40px;
+	min-height: 800px;  
+	/*max-height: 1000px;*/
+}
+
+.absolute {
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.outer {
+	position: relative;
+	width: 100%;
+	/*max-width: 100%;*/
+	/*background-color: #246;*/
+	display: table;
+}
+
+.inner {
+	position: relative;
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h1, h2{
+		font-family: 'Merriweather Sans', sans-serif; font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+header {
+	z-index: 99;
+}
+
+header h1 {
+    font-size: 4em;
+    line-height: .1em;
+}
+
+header hr {
+width:50%;
+border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+}
+h2 {
+	  font-size: 1em;
+}
+
+.hide{
+    /*so each letter isn't visible on load*/
+    visibility: hidden;
+    opacity: 0.0;
+} 
+
+h1 span{
+    transition: 1s ease;
+}
+
+footer{
+
+}
+
+
+@media (max-width: 1200px) {
+      .main {
+      		min-height: 700px;  
+			}	
+
+@media (max-width: 700px) {
+      .main {
+      		min-height: 350px;  
+			}	
+      header h1 {
+        font-size: 2.5em;
+       }
+       h2 {
+       	font-size: .7em;
+       }
+
+      nav {
+      	font-size: .7em;
+      }

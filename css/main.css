@@ -1,0 +1,18 @@
+body{
+    background-color: #333;
+}
+
+h1{
+    font-family: Verdana, Arial, sans-serif;
+    color: #fff;
+}
+
+.hide{
+    /*so each letter isn't visible on load*/
+    visibility: hidden;
+    opacity: 0.0;
+} 
+
+h1 span{
+    transition: 1s ease;
+}
