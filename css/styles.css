@@ -119,7 +119,7 @@ header h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 header h2 {
@@ -360,8 +360,26 @@ footer h6 {
         height: 220px;
         width: 100%;
         display: block;
+        /*vertical-align: middle;*/
       }
-
+      .oliveHarvest > h2{
+          position: absolute;
+          top:13%;
+          left: 0;
+          right: 0;
+      }
+      .artistSpaces > h2{
+          position: absolute;
+          top:46%;
+          left: 0;
+          right: 0;
+      }
+      .felting > h2{
+          position: absolute;
+          top:79%;
+          left: 0;
+          right: 0;
+      }
       .twoUp img {
         max-height: 100px;    
       }
