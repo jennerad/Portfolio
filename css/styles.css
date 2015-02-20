@@ -363,20 +363,7 @@ footer h6 {
       }
 
       .twoUp img {
-        max-height: 80px;    
-      }
-
-      .divider {
-        padding: 20px 0px;
-      }
-
-      h1 { 
-        /*font-size: .5em;*/
-      }
-
-
-      h2, h3 {
-        /*font-size: 1em;*/
+        max-height: 100px;    
       }
 
       footer {
