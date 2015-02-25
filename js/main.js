@@ -84,7 +84,7 @@ $('a[href*=#]:not([href=#])').click(function() {
                 //add or subtract that height from target.offset().top below
                 console.log(dividerOffset);
              $('html,body').animate({
-                 scrollTop: target.offset().top - 22.222
+                 scrollTop: target.offset().top - 22
             }, 1000);
             return false;
         }
