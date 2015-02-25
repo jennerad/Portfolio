@@ -10,24 +10,65 @@
 			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/styles.css">
 
+<!-- 			<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Merriweather+Sans:400,300,300italic,800,800italic,700italic,700,400italic' rel='stylesheet' type='text/css'>
+			
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> -->
+			
+			<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- 			<link href='http://fonts.googleapis.com/css?family=Codystar:300,400' rel='stylesheet' type='text/css'> -->
+
+			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/styles.css">
+
 	</head>
 	<body>
 				
-		<header >
+		<header>
 				<div id="nav-wrapper">
 					<nav>
-					<ul class="alignright">
-						<li><a href="#">design</a></li>
-						<li><a href="#">photography</a></li>
-						<li><a href="#">about</a></li>
+          <ul>
+            <!-- <li><a href="#hero"><img src="graphics/logo_temp.png" alt="Jenifer Nerad homepage" class="logo-list"></a></li> -->
+            <li><a href="index.html#design">Design</a></li>
+            <li><a href="index.html#photography">Photography</a></li>
+						<li><a href="index.html#about">About</a></li>
 					</ul>
+          <a href="index.html"><img src="graphics/logo_temp.png" alt="Jenifer Nerad homepage" class=" logo"></a>
+          
 					</nav>
 				</div>
-				
+				<div id="contact-form" class="formBgPhoto outer">	
+						<div class="inner">
+			    		<h1 class="hide">Keep in touch.</h1>
+			    				<button id="emailMeButton"><a href="#contact-wrapper">Send me an email</a></button>
+
+			    		<!-- <h2>Designer / Photographer / Maker</h2> -->
+			  		</div>
+			  </div>
 		</header>
-		
+		<div id="contact-wrapper">
+			<form>
+				<h2> </h2>
+			 	<!-- <legend>Send me an email</legend> -->
+				 	<label for="name-first">Name:*</label><br>
+				 	<input type="text" placeholder="First" id="name-first" name="name[first]" required >
+				 	<input type="text" placeholder="Last" id="name-last" name="name[last]" size="47%" required>
+				 	</br>
+				 	<label for="email-address">Email Address:*</label>
+				 	<input type="email" id="email-address" placeholder="youremail@domain.com" name="email-address" required>
+				 			<!-- </br> -->
 
+				 	<label for="subject">Subject:</label>
+				 	<input type="text" placeholder="Subject" id="subject" name="subject" required>
+				 			<!-- </br> -->
+				 	<label for="message">Message</label>
+				 <textarea name="message" placeholder=" "></textarea>
+				 			<!-- </br> -->
 
+				 <input id="submit" type="submit" value="Submit">
+
+			 </form>
+		</div>	 	
 
 		<footer>
 			<ul>
@@ -47,7 +88,11 @@
 					<a href="http://instagram.com/jennifernerad/" target="_blank"><img src="graphics/instagramDot.png" alt="Instagram"></a>
 				</li>
 			</ul>
+              <h6>&copy; 2015 Jennifer Nerad</h6>
 		</footer>
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/main.js"></script>
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>

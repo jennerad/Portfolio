@@ -40,7 +40,7 @@ function animateHeadline($selector, delay){
     //this interval allows us to step over the letters one at a time
     var animationInterval = setInterval(function(){
         if(index < $spans.length){
-            console.log($spans.eq(index));
+            // console.log($spans.eq(index));
             $spans.eq(indices[index]).removeClass('hide');
             //while we're marching ahead 1 by 1, we've shuffled the indices
             //so the numbers fade in at random
@@ -50,7 +50,7 @@ function animateHeadline($selector, delay){
         }
     }, delay);
 
-};
+}
 
 var $headline = $('h1');
 prepareHeadline($headline);
@@ -66,18 +66,32 @@ $('h1').mouseenter(function(){
 
 
 //smooth-scrolling via http://css-tricks.com/snippets/jquery/smooth-scrolling/
-
+var dividerByName; 
+var dividerOffset;
 $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
+                //find the id of the link that just got clicked - works!
+                dividerByName = $(this).attr('href');
+                // dividerByName = $(dividerByName).outerHTML;
+                    console.log($(this).attr('href'));
+                //find the height of the nav in pixels ()
+                dividerOffset = $('#design .divider').outerHeight();
+                    console.log($('#design .divider').outerHeight());
+                //add or subtract that height from target.offset().top below
+                console.log(dividerOffset);
              $('html,body').animate({
-                 scrollTop: target.offset().top
+                 scrollTop: target.offset().top - 22.222
             }, 1000);
             return false;
         }
     }
+});
+
+$("#emailMeButton").click(function(){
+    console.log("clicked");
+    $("#contact-wrapper").toggle();
 });
