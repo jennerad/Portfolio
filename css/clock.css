@@ -1,0 +1,165 @@
+.wholeclock {
+  /*background-position:0 0;*/
+  text-align: center;
+  margin: 0 auto;
+  top:50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  padding: 0em 0;
+  position: absolute;
+
+}
+
+#timeHours, #timeMinutes, #timeSeconds, .colon{
+     margin: 5px;
+     display: inline-block;
+     vertical-align: middle;
+
+}
+
+.timePart {
+  width: 150px;
+
+}
+
+.timePartColon {
+  width: 80px;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+}
+
+/*.flex-child {
+
+}*/
+/*SPRITES for 0-60*/
+
+
+.time25, .time60, .time59, .time58, .time57, .time56, .time55, .time54, .time53, .time52, .time51, .time50, .time49, .time48
+, .time47, .time46, .time45, .time44, .time43, .time42, .time41, .time40, .time39, .time36, .time37, .time38, .time35, .time34, .time33, .time32, .time31, .time30, .time29, .time28, .time27, .time26, .time24, .time23, .time22, .time21, .time20, .time19, .time18, .time17, .time16, .time15, .time14, .time13, .time12, .time11
+, .time10, .time09, .time08, .time07, .time06, .time05, .time04, .time03, .time02, .time01 { background:url('../images/numbersSpritePath.png');
+ }
+
+
+.time60, .time59, .time58, .time39 { width: 136px; }
+
+.time46, .time36 { width: 142px; }
+
+.time37, .time35, .time22, .time21, .time18 { width: 138px; }
+
+.time38, .time34, .time23 { width: 143px; }
+
+.time30, .time24 { width: 139px; }
+
+.time27, .time20 { width: 148px; }
+
+.time33, .time19 { width: 133px; }
+
+.time32, .time16 { width: 131px; }
+
+.time13, .time11
+ { height: 124px; }
+
+.time25, .time46, .time24 { height: 122px; }
+
+.time40, .time34 { height: 144px; }
+
+.time36, .time33 { height: 138px; }
+
+.time38, .time32 { height: 137px; }
+
+.time39, .time31 { height: 136px; }
+
+.time60, .time29 { height: 126px; }
+
+.time30, .time28, .time27, .time12 { height: 120px; }
+
+.time57, .time56 { width: 136px; height: 128px; }
+
+.time55, .time54, .time52, .time51, .time49, .time48
+ { width: 136px; height: 124px; }
+
+.time53, .time50 { width: 136px; height: 122px; }
+
+.time44, .time43, .time42 { width: 136px; height: 92px; }
+
+.time45, .time41 { width: 142px; height: 92px; }
+
+.time47, .time26 { width: 140px; height: 122px; }
+
+.time25 { background-position: -2px -612px; width: 146px; }
+.time60 { background-position: -757px -1368px; }
+.time59 { background-position: -610px -1365px; height: 131px; }
+.time58 { background-position: -458px -1366px; height: 130px; }
+.time57 { background-position: -309px -1367px; }
+.time56 { background-position: -156px -1367px; }
+.time55 { background-position: -7px -1369px; }
+.time54 { background-position: -757px -1216px; }
+.time53 { background-position: -610px -1217px; }
+.time52 { background-position: -458px -1216px; }
+.time51 { background-position: -309px -1216px; }
+.time50 { background-position: -156px -1216px; }
+.time49 { background-position: -7px -1216px; }
+.time48
+ { background-position: -757px -1065px; }
+.time47 { background-position: -608px -1066px; }
+.time46 { background-position: -455px -1066px; }
+.time45 { background-position: -306px -1081px; }
+.time44 { background-position: -156px -1081px; }
+.time43 { background-position: -7px -1081px; }
+.time42 { background-position: -757px -929px; }
+.time41 { background-position: -607px -929px; }
+.time40 { background-position: -457px -903px; width: 137px; }
+.time39 { background-position: -309px -907px; }
+.time36 { background-position: -754px -757px; }
+.time37 { background-position: -6px -907px; height: 134px; }
+.time38 { background-position: -153px -906px; }
+.time35 { background-position: -609px -757px; height: 139px; }
+.time34 { background-position: -454px -754px; }
+.time33 { background-position: -310px -757px; }
+.time32 { background-position: -159px -758px; }
+.time31 { background-position: -10px -758px; width: 130px; }
+.time30 { background-position: -756px -613px; }
+.time29 { background-position: -611px -610px; width: 134px; }
+.time28 { background-position: -456px -613px; width: 140px; }
+/*.time27 { background-position: -285px -613px; }*/
+
+.time27 { background-position: -301px -613px; }
+.time26 { background-position: -154px -612px; }
+
+/*.time26 { background-position: -154px -612px; }*/
+.time24 { background-position: -756px -465px; }
+.time23 { background-position: -606px -467px; height: 118px; }
+.time22 { background-position: -457px -469px; height: 112px; }
+.time21 { background-position: -308px -464px; height: 123px; }
+.time20 { background-position: -150px -478px; height: 95px; }
+.time19 { background-position: -8px -482px; height: 87px; }
+.time18 { background-position: -756px -320px; height: 91px; }
+.time17 { background-position: -606px -324px; width: 144px; height: 82px; }
+.time16 { background-position: -460px -321px; height: 88px; }
+.time15 { background-position: -331px -298px; width: 92px; height: 135px; }
+.time14 { background-position: -177px -299px; width: 94px; height: 132px; }
+.time13 { background-position: -24px -303px; width: 101px; }
+.time12 { background-position: -775px -150px; width: 100px; }
+.time11
+ { background-position: -622px -148px; width: 112px; }
+.time10 { background-position: -473px -163px; width: 105px; height: 94px; }
+.time09 { background-position: -327px -162px; width: 99px; height: 96px; }
+.time08 { background-position: -176px -157px; width: 97px; height: 107px; }
+.time07 { background-position: -30px -161px; width: 89px; height: 98px; }
+.time06 { background-position: -782px -27px; width: 87px; height: 84px; }
+.time05 { background-position: -619px -46px; width: 117px; height: 46px; }
+.time04 { background-position: -498px -45px; width: 56px; height: 48px; }
+.time03 { background-position: -352px -47px; width: 49px; height: 44px; }
+.time02 { background-position: -210px -48px; width: 28px; height: 42px; }
+.time01 { background-position: -70px -50px; width: 10px; height: 38px; }
+

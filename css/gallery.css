@@ -1,0 +1,38 @@
+section {
+  /*position: absolute;*/
+  /*top: 300;*/
+  /*height: 100%;*/
+  /*width: 80%;*/
+  background-color: #ddd;
+}
+
+.gallery-wrap {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*top: 500px;*/
+
+}
+.gallery-img {
+  /*position: absolute;*/
+  width: 80%;
+  margin: auto 0;
+}
+#gallery p, h1, h2 {
+  margin: 0 10%;
+}
+
+#gallery h1 {
+  font-size: 4em;
+  line-height: 1em;
+  color: black;
+}
+
+#gallery h2 {
+  font-size: 2.5em;
+  color: black;
+}

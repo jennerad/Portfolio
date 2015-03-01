@@ -84,7 +84,7 @@ $('a[href*=#]:not([href=#])').click(function() {
                 //add or subtract that height from target.offset().top below
                 console.log(dividerOffset);
              $('html,body').animate({
-                 scrollTop: target.offset().top - 22
+                 scrollTop: target.offset().top - $('#nav-wrapper').outerHeight() + dividerOffset
             }, 1000);
             return false;
         }
@@ -95,3 +95,6 @@ $("#emailMeButton").click(function(){
     console.log("clicked");
     $("#contact-wrapper").toggle();
 });
+
+
+                

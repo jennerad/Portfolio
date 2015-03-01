@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    	<meta name="description" content="Jennifer Nerad, designer and photographer">
-		<title>Jennifer Nerad | Designer, Photographer</title>
-
-<!-- 			<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Merriweather+Sans:400,300,300italic,800,800italic,700italic,700,400italic' rel='stylesheet' type='text/css'>
-			
-			<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> -->
-			
-			<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-
-<!-- 			<link href='http://fonts.googleapis.com/css?family=Codystar:300,400' rel='stylesheet' type='text/css'> -->
-
-			<link rel="stylesheet" href="css/normalize.css">
-			<link rel="stylesheet" href="css/styles.css">
-
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Jennifer Nerad, designer and photographer">
+		<title>Jennifer Nerad | Designer, Photographer</title>	
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/clock.css">
 	</head>
-	<body>
-				
+	<body onload="startTime()">
 		<header>
 				<div id="nav-wrapper">
 					<nav>
           <ul>
-            <!-- <li><a href="#hero"><img src="graphics/logo_temp.png" alt="Jenifer Nerad homepage" class="logo-list"></a></li> -->
             <li><a href="#design">Design</a></li>
             <li><a href="#photography">Photography</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
           <a href="#hero"><img src="graphics/logo_temp.png" alt="Jenifer Nerad homepage" class=" logo"></a>
-          
 					</nav>
 				</div>
 				<div id="hero" class="main outer">	
@@ -57,16 +46,37 @@
           <h5>Built with SiteWelder</h5>
         </div>
       </div>
+      <div class="outer ticClock">
+        <div class="inner">
+            <div class="flex-parent wholeclock">   
+              <div class="timePart">
+                <div id="timeHours" class="time04"></div> 
+              </div>
+              <div class="timePartColon">
+                <img src="images/colon.png" class="colon">
+              </div>
+              <div class="timePart">
+                <div id="timeMinutes" class="time20 "></div>
+              </div>
+              <div class="timePartColon">
+                <img src="images/colon.png" class="colon">
+              </div>
+              <div class="timePart">
+                <div id="timeSeconds" class="time44 "></div>
+              </div>  
+            </div>
+        </div>
+      </div>
       <div class="outer">  
         <div class="twoUp inner BBPhoto2">
-          <h2>Benschneider Photography</h2>
-          <a href="http://www.benschneiderphoto.com/" target="blank"><img src="images/BBPhotoWebsite.png" alt="Britt's Pickles"></a>
-          <h5>Built with SiteWelder</h5>
+          <h2>This space reserved</h2>
+          <a><img src="images/3graystones.png" alt="generic image"></a>
+          <h5>x o x o x</h5>
         </div>
          <div class="twoUp inner BPickles2">
-          <h2>Britt's Pickles</h2>
-          <a href="http://www.brittspickles.com" target="blank"><img src="images/BPWebsite.png" alt="Britt's Pickles"></a>
-          <h5>Built with SquareSpace</h5>
+          <h2>This space reserved</h2>
+          <a><img src="images/cloudswhale.png" alt="generic image"></a>
+          <h5>x o x o x</h5>
         </div>       
       </div>
     <div id="photography">
@@ -80,9 +90,11 @@
   	</div>
     
     <div class="outer">
-      <div class="threeUp inner oliveHarvest">
-        <h2 "textOverImage">The Olive Harvest</h2>
-      </div>
+      <a href="gallery.html" target="_blank">
+        <div class="threeUp inner oliveHarvest">
+          <h2 "textOverImage">The Olive Harvest</h2>
+        </div>
+      </a>
       <div class="threeUp inner artistSpaces">
         <h2>Artists + Spaces</h2>
       </div>        
@@ -91,7 +103,7 @@
       </div>
     </div>
   	<div class="outer photolink farmFood">
-      <h2 class="inner">Farm & Food</h2>
+      <h2 class="inner">Farm &amp; Food</h2>
   	</div>
 
     <div id="about">
@@ -103,31 +115,30 @@
           <p>Hello! I am a designer, photographer, photo editor and maker with over 18 years of experience in visuals, media, and publishing. I'm strong on soft skills such as leadership, problem-solving, flexibility, empathy, and effective communication.</p>
         </div>
     </div>
-
 		<footer>
-			<ul>
-				<li>
-					<a href="contact.html"><img src="graphics/emailDot.png" alt="Email"></a>
-				</li>
-				<li>
-					<a href="http://twitter.com/jennerad" target="_blank"><img src="graphics/twitterDot.png" alt="Twitter"></a>
-				</li>
-				<li>
-					<a href="http://www.linkedin.com/pub/jennifer-nerad/12/182/143/" target="_blank"><img src="graphics/linkedInDot.png" alt="LinkedIn"></a>
-				</li>
-				<li>
-					<a href="https://github.com/jennerad" target="_blank"><img src="graphics/githubDot.png" alt="GitHub"></a>
-				</li>
-				<li>
-					<a href="http://instagram.com/jennifernerad/" target="_blank"><img src="graphics/instagramDot.png" alt="Instagram"></a>
-				</li>
-			</ul>
+      <ul>
+        <li>
+          <a href="contact.html"><img src="graphics/emailDot.png" alt="Email"></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/jennerad" target="_blank"><img src="graphics/twitterDot.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/jennifer-nerad/" target="_blank"><img src="graphics/linkedInDot.png" alt="LinkedIn"></a>
+        </li>
+        <li>
+          <a href="https://github.com/jennerad" target="_blank"><img src="graphics/githubDot.png" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="http://instagram.com/jennifernerad/" target="_blank"><img src="graphics/instagramDot.png" alt="Instagram"></a>
+        </li>
+      </ul>
               <h6>&copy; 2015 Jennifer Nerad</h6>
 		</footer>
-
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>
 
+    <script src="js/clock.js"></script>
 
 				
 </body>
