@@ -151,13 +151,6 @@ a:hover, a:active, a:focus {
 .nav-mobile {
 }
 
-/*** OTHER ***/
-
-.bio img {
-    max-width: 200px;
-  }
-
-
 /*** TYPE ***/
 a {
   text-decoration: none;
@@ -542,15 +535,25 @@ textarea {
       left: 0;
       right: 0;
   }
+
   .bio {
     background-color: #ddd;
     color: black;
   }
-  .bio img {
-    margin: 1em;
-    width: 80%;
-    height: auto;
+  .bio-image img {
+    max-width: 200px;
+    margin: 1em 0 0;
   }
+  .bio-image img:last-child{
+    display:none;
+  }
+  .bio-image:hover img:first-child{
+    display:none;
+  }
+  .bio-image:hover img:last-child{
+    display:inline-block;
+  }
+
   footer{
     text-align: center;
     overflow: hidden;
@@ -581,8 +584,6 @@ textarea {
     /*width: 100%;*/
   }
 }
-
-
 
 /*** TABLET ***/
 
