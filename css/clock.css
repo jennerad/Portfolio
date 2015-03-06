@@ -1,26 +1,24 @@
 .wholeclock {
   /*background-position:0 0;*/
   text-align: center;
-  margin: 0 auto;
-  top:50%;
-  bottom: 50%;
+  vertical-align: middle;
+  margin: auto;
+  top:0;
+  bottom: 0;
   left: 0;
   right: 0;
   padding: 0em 0;
   position: absolute;
-
 }
 
 #timeHours, #timeMinutes, #timeSeconds, .colon{
-     margin: 5px;
+     /*margin: 5em;*/
      display: inline-block;
      vertical-align: middle;
-
-}
+   }
 
 .timePart {
   width: 150px;
-
 }
 
 .timePartColon {
@@ -31,16 +29,15 @@
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;  
+  align-content: center;
 
 }
 
-/*.flex-child {
 
-}*/
 /*SPRITES for 0-60*/
 
 
