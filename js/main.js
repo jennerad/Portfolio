@@ -56,12 +56,10 @@ var $headline = $('h1');
 prepareHeadline($headline);
 animateHeadline($headline, 100);
 
-
 $('h1').mouseenter(function(){
     prepareHeadline($headline);
     animateHeadline($headline, 50);
 });
-
 
 //smooth-scrolling via http://css-tricks.com/snippets/jquery/smooth-scrolling/
 var dividerByName; 
