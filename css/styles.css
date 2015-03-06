@@ -151,12 +151,6 @@ a:hover, a:active, a:focus {
 .nav-mobile {
 }
 
-/*** OTHER ***/
-
-.bio img {
-    max-width: 200px;
-  }
-
 
 /*** TYPE ***/
 a {
@@ -543,14 +537,39 @@ textarea {
       right: 0;
   }
   .bio {
-    background-color: #ddd;
-    color: black;
+  background-color: hsl(229, 8%, 87%);    
+  color: black;
   }
   .bio img {
-    margin: 1em;
+ /*   margin: 1em;
     width: 80%;
-    height: auto;
+    height: auto;*/
   }
+
+  .bio-image-wrap {
+      background: url('../images/JN-1.png') no-repeat;
+      height: 300px;
+      margin: 10px 0;
+      text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  align-content: center; 
+  }
+
+  .bio-image-wrap img {
+
+    /*display: inline-block;*/
+      /*position: absolute;*/
+      /*top: 0; bottom: 0; left: 20; right: 0;*/
+      /*margin: auto;*/
+      /*float: right;*/
+    }
+
   footer{
     text-align: center;
     overflow: hidden;
