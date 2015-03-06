@@ -1,3 +1,33 @@
+  .main-gallery {
+    background: url('../images/oliveharvest-reach.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    height: 800px;  
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: center;
+    background-position: 30% 50%; 
+    /* scale bg image proportionately */
+    background-size: cover;   
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(/backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+  }
+
+.image-left {
+  height: 300px;
+  float: left;
+  margin: 25px 25px 25px 0;
+}
+
+.image-right {
+  height: 300px;
+  float: right;
+  margin: 25px 0px 25px 25px;
+}
+
 section {
   /*position: absolute;*/
   /*top: 300;*/
@@ -6,33 +36,6 @@ section {
   background-color: #ddd;
 }
 
-.gallery-wrap {
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /*top: 500px;*/
-
-}
-.gallery-img {
-  /*position: absolute;*/
-  width: 80%;
-  margin: auto 0;
-}
-#gallery p, h1, h2 {
-  margin: 0 10%;
-}
-
-#gallery h1 {
-  font-size: 4em;
-  line-height: 1em;
-  color: black;
-}
-
-#gallery h2 {
-  font-size: 2.5em;
-  color: black;
+p {
+  text-align: left;
 }

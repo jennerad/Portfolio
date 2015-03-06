@@ -58,8 +58,6 @@ animateHeadline($headline, 100);
 
 
 $('h1').mouseenter(function(){
-    console.log('mouseenter');
-    var $headline = $('h1');
     prepareHeadline($headline);
     animateHeadline($headline, 50);
 });
@@ -77,12 +75,9 @@ $('a[href*=#]:not([href=#])').click(function() {
                 //find the id of the link that just got clicked - works!
                 dividerByName = $(this).attr('href');
                 // dividerByName = $(dividerByName).outerHTML;
-                    console.log($(this).attr('href'));
                 //find the height of the nav in pixels ()
                 dividerOffset = $('#design .divider').outerHeight();
-                    console.log($('#design .divider').outerHeight());
                 //add or subtract that height from target.offset().top below
-                console.log(dividerOffset);
              $('html,body').animate({
                  scrollTop: target.offset().top - $('#nav-wrapper').outerHeight() + dividerOffset
             }, 1000);
@@ -92,7 +87,6 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 $("#emailMeButton").click(function(){
-    console.log("clicked");
     $("#contact-wrapper").toggle();
 });
 
